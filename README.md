@@ -1,4 +1,4 @@
-# A converter for video files to a minecraft datapack
+# A converter from video files to minecraft datapack
 
 ## Requirements
 - FFMpeg installed / added to the PATH
