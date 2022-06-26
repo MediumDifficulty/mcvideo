@@ -27,7 +27,7 @@ fn main() {
     let name = &args[2];
     let dithered: bool = args[3].parse().unwrap();
     let dimensions = &args[4];
-    let pos: (usize, usize, usize) = (
+    let pos: (isize, isize, isize) = (
         args[5].parse().unwrap(),
         args[6].parse().unwrap(),
         args[7].parse().unwrap()
