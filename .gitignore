@@ -1,0 +1,10 @@
+/target
+/frames
+/textures
+/Cargo.lock
+
+
+*.mp4
+*.zip
+
+/.vscode
