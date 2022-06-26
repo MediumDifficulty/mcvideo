@@ -17,7 +17,7 @@ pub static TEXTURES: Lazy<Vec<(Image, String)>> = Lazy::new(||
         .unwrap()
         .clone();
 
-        println!("{:?}", path.as_ref().unwrap().path().file_name().unwrap());
+        println!("Loaded texture: {:?}", path.as_ref().unwrap().path().file_name().unwrap());
 
         let mut file_name = path.unwrap().file_name().into_string().unwrap();
 

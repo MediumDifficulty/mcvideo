@@ -13,15 +13,15 @@ use rayon::iter::{IntoParallelRefIterator, ParallelIterator, IndexedParallelIter
 
 type Image = ImageBuffer<Rgb<u8>, Vec<u8>>;
 
-// const pos: (u32, u32, u32) = (0, 128, 0);
-// const name: &str = "video";
-// const dithered: bool = true;
-// const dimensions: &str = "320x180";
-
 fn main() {
     let args: Vec<String> = env::args().collect();
 
-    println!("{:?}", args);
+    if args.len() < 8 {
+        println!("Not enough arguments supplied!\n");
+        println!("<input file name> <name of datapack> <enable dithering> <dimensions of image eg. 320x180> <x> <y> <z> positions of the display");
+
+        return ();
+    }
 
     let input = &args[1];
     let name = &args[2];
