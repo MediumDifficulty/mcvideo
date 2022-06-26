@@ -1,7 +1,7 @@
 # A converter from video files to minecraft datapack
 
 ## Requirements
-- FFMpeg installed / added to the PATH
+- FFmpeg installed / added to the PATH
 - Python installed (if you want to use the script)
 
 ## Usage
